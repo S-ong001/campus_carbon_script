@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>校园碳中和平台</title>
+<!-- 外部资源 -->
+<link href="碳足迹与二手书配送网站样式.css" rel="stylesheet">
+
+<!-- 核心CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 页面标题 -->
+<div class="bg-white py-6 shadow-sm">
+<div class="max-w-7xl mx-auto text-center">
+<h1 class="text-3xl font-bold text-[#2980B9]">校园碳中和生态系统</h1>
+<p class="text-gray-600 mt-2">区块链追溯 | AI匹配算法 | 碳积分激励</p>
+</div>
+</div>
+<!-- 功能模块容器 -->
+<div class="max-w-7xl mx-auto py-8">
+<!-- 模块1: 区块链书籍流转追溯 -->
+<div class="page-container">
+<div class="bg-[#2980B9] text-white py-4 px-8">
+<h2 class="text-2xl font-bold flex items-center">
+<span class="iconify mr-2 text-xl" data-icon="mdi:blockchain"></span>
+          区块链书籍流转历史追溯
+        </h2>
+</div>
+<div class="p-8">
+<!-- 搜索区域 -->
+<div class="flex mb-8">
+<input class="flex-1 border border-gray-300 rounded-l-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2980B9]" placeholder="输入ISBN或书名进行历史追溯..." type="text"/>
+<button class="btn-primary rounded-l-none">追溯记录</button>
+</div>
+<!-- 信息展示 -->
+<div class="grid grid-cols-3 gap-6">
+<!-- 区块链验证状态 -->
+<div class="card">
+<div class="flex items-center mb-4">
+<span class="iconify text-2xl text-green-500 mr-2" data-icon="mdi:shield-check"></span>
+<h3 class="font-semibold">区块链验证状态</h3>
+</div>
+<div class="bg-green-50 p-4 rounded border border-green-200">
+<div class="text-green-700 font-medium">已验证 · 3次交易记录</div>
+<div class="mt-1 text-sm text-gray-600">交易哈希: 0x9a3f...b2c8</div>
+</div>
+</div>
+<!-- 流转时间线 -->
+<div class="card col-span-2">
+<h3 class="font-semibold mb-4">书籍流转历史</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-3">
+<span class="iconify text-blue-700" data-icon="mdi:account-outline"></span>
+</div>
+<div>
+<div class="font-medium">张明同学</div>
+<div class="text-sm text-gray-600">2025年9月10日 购入 · 价格¥45.00</div>
+<div class="text-sm text-gray-500 mt-1">计算机科学与技术学院</div>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 bg-yellow-100 rounded-full p-2 mr-3">
+<span class="iconify text-yellow-700" data-icon="mdi:swap-horizontal"></span>
+</div>
+<div>
+<div class="font-medium">李芳同学</div>
+<div class="text-sm text-gray-600">2025年3月5日 购得 · 价格¥38.00</div>
+<div class="text-sm text-gray-500 mt-1">经济管理学院</div>
+</div>
+</div>
+</div>
+<div class="mt-4 text-center">
+<div class="inline-flex items-center text-blue-600 font-medium cursor-pointer">
+                查看完整区块链记录
+                <span class="iconify ml-1" data-icon="mdi:arrow-right"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- 区块链验证说明 -->
+<div class="mt-8 p-6 bg-gray-50 rounded-lg">
+<h3 class="font-semibold mb-3 text-[#2980B9]">区块链技术保障</h3>
+<div class="grid grid-cols-4 gap-4">
+<div class="text-center">
+<span class="iconify inline-block text-3xl text-[#3498DB]" data-icon="mdi:lock-outline"></span>
+<p class="mt-2 text-sm">交易不可篡改</p>
+</div>
+<div class="text-center">
+<span class="iconify inline-block text-3xl text-[#27AE60]" data-icon="mdi:shield-check-outline"></span>
+<p class="mt-2 text-sm">去中心化验证</p>
+</div>
+<div class="text-center">
+<span class="iconify inline-block text-3xl text-[#8E44AD]" data-icon="mdi:history"></span>
+<p class="mt-2 text-sm">完整历史追溯</p>
+</div>
+<div class="text-center">
+<span class="iconify inline-block text-3xl text-[#E74C3C]" data-icon="mdi:account-group-outline"></span>
+<p class="mt-2 text-sm">多方共同监督</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 模块2: AI优化匹配算法 -->
+<div class="page-container mt-10">
+<div class="bg-[#3498DB] text-white py-4 px-8">
+<h2 class="text-2xl font-bold flex items-center">
+<span class="iconify mr-2 text-xl" data-icon="mdi:robot"></span>
+          AI优化匹配算法展示
+        </h2>
+</div>
+<div class="p-8">
+<div class="grid grid-cols-2 gap-8">
+<!-- 算法原理展示 -->
+<div class="card">
+<h3 class="font-semibold mb-6">智能匹配算法原理</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">1</div>
+<div>
+<div class="font-medium">需求特征提取</div>
+<p class="text-sm text-gray-600 mt-1">通过教材ISBN、专业课程等数据建立特征矩阵</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">2</div>
+<div>
+<div class="font-medium">多维权重计算</div>
+<p class="text-sm text-gray-600 mt-1">基于教材重要性、新旧程度和配送距离动态加权</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">3</div>
+<div>
+<div class="font-medium">最优匹配推荐</div>
+<p class="text-sm text-gray-600 mt-1">采用KNN算法为每位用户推荐最合适的卖家</p>
+</div>
+</div>
+</div>
+<div class="mt-6">
+<h4 class="font-medium mb-3">当前算法版本</h4>
+<div class="bg-blue-50 px-4 py-2 rounded border border-blue-200 w-fit text-sm">
+                v2.3.1 · 推荐准确率 92.7%
+              </div>
+</div>
+</div>
+<!-- 算法效益可视化 -->
+<div class="card">
+<h3 class="font-semibold mb-6">优化算法成效分析</h3>
+<div class="chart-box" id="algorithmChart1"></div>
+<div class="text-center text-sm text-gray-600 mt-2">
+              近半年AI智能匹配减少的配送距离（单位：公里）
+            </div>
+</div>
+</div>
+<!-- 实际案例对比 -->
+<div class="mt-8">
+<h3 class="font-semibold mb-6 text-lg">智能匹配案例展示</h3>
+<div class="grid grid-cols-2 gap-6">
+<div class="border border-gray-200 rounded-lg p-5">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-medium text-red-500">传统匹配方式</h4>
+<div class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">
+                  距离: 3.2km
+                </div>
+</div>
+<div class="flex justify-between">
+<div class="text-center">
+<img alt="Buyer location" class="w-16 h-16 mx-auto" id="1" src="https://modao.cc/agent-py/workspace/6909efb792eac8d377c0d2bd/generated_images/3eac336331fa4cacb982f6c9d907cec0.jpg"/>
+<p class="mt-2">买家: 李同学</p>
+<p class="text-sm text-gray-600">东区宿舍3号楼</p>
+</div>
+<div class="self-center text-2xl text-gray-300">→</div>
+<div class="text-center">
+<img alt="Seller location" class="w-16 h-16 mx-auto" id="2" src="https://modao.cc/agent-py/workspace/6909efb792eac8d377c0d2bd/generated_images/21da219dbf654414969e843be571f8d0.jpg"/>
+<p class="mt-2">卖家: 张同学</p>
+<p class="text-sm text-gray-600">西区宿舍10号楼</p>
+</div>
+</div>
+<div class="mt-4 bg-red-50 p-3 rounded">
+<div class="flex items-center">
+<span class="iconify text-red-500 mr-2" data-icon="mdi:clock-alert"></span>
+                  配送耗时约45分钟
+                </div>
+</div>
+</div>
+<div class="border border-gray-200 rounded-lg p-5">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-medium text-green-600">AI智能匹配</h4>
+<div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                  距离: 0.6km
+                </div>
+</div>
+<div class="flex justify-between">
+<div class="text-center">
+<img alt="Buyer location" class="w-16 h-16 mx-auto" id="3" src="https://modao.cc/agent-py/workspace/6909efb792eac8d377c0d2bd/generated_images/d584b1bc5ef64419b9a9acd03e40a337.jpg"/>
+<p class="mt-2">买家: 李同学</p>
+<p class="text-sm text-gray-600">东区宿舍3号楼</p>
+</div>
+<div class="self-center text-2xl text-gray-300">→</div>
+<div class="text-center">
+<img alt="Seller location" class="w-16 h-16 mx-auto" id="4" src="https://modao.cc/agent-py/workspace/6909efb792eac8d377c0d2bd/generated_images/db1a28ef0aac463c98aad6c741187e77.jpg"/>
+<p class="mt-2">卖家: 王同学</p>
+<p class="text-sm text-gray-600">东区宿舍5号楼</p>
+</div>
+</div>
+<div class="mt-4 bg-green-50 p-3 rounded">
+<div class="flex items-center">
+<span class="iconify text-green-500 mr-2" data-icon="mdi:clock-fast"></span>
+                  配送耗时约10分钟
+                </div>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center text-blue-600 font-medium">
+            使用AI匹配算法平均减少碳排放 2.3kg/月
+          </div>
+</div>
+</div>
+</div>
+<!-- 模块3: 碳积分激励机制 -->
+<div class="page-container mt-10">
+<div class="bg-gradient-to-r from-[#27AE60] to-[#2ECC71] text-white py-4 px-8">
+<h2 class="text-2xl font-bold flex items-center">
+<span class="iconify mr-2 text-xl" data-icon="mdi:leaf"></span>
+          碳积分激励机制
+        </h2>
+</div>
+<div class="p-8">
+<!-- 积分概览 -->
+<div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+<div class="flex justify-between items-center">
+<div>
+<h3 class="font-semibold text-gray-700">我的碳积分</h3>
+<div class="text-4xl font-bold text-green-700 mt-2">1,245</div>
+<div class="text-sm text-gray-600 mt-1">全校排名: 第37名</div>
+</div>
+<div class="bg-white rounded-xl p-4 border border-green-200">
+<div class="text-green-600 font-medium flex items-center">
+<span class="iconify mr-1" data-icon="mdi:trending-up"></span>
+                今日增长 +120
+              </div>
+<div class="text-xs text-gray-600 mt-1">2025-11-04数据更新</div>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4 mt-6">
+<div class="bg-white rounded-lg p-3 text-center border border-green-100 shadow-sm">
+<span class="iconify block text-2xl text-green-600 mx-auto" data-icon="mdi:bicycle"></span>
+<div class="font-medium mt-1">步行送书</div>
+<div class="text-xs text-green-500">+15分/次</div>
+</div>
+<div class="bg-white rounded-lg p-3 text-center border border-green-100 shadow-sm">
+<span class="iconify block text-2xl text-green-600 mx-auto" data-icon="mdi:recycle"></span>
+<div class="font-medium mt-1">购买二手书</div>
+<div class="text-xs text-green-500">+8分/本</div>
+</div>
+<div class="bg-white rounded-lg p-3 text-center border border-green-100 shadow-sm">
+<span class="iconify block text-2xl text-green-600 mx-auto" data-icon="mdi:calendar-check"></span>
+<div class="font-medium mt-1">连续签到</div>
+<div class="text-xs text-green-500">+5分/天</div>
+</div>
+<div class="bg-white rounded-lg p-3 text-center border border-green-100 shadow-sm">
+<span class="iconify block text-2xl text-green-600 mx-auto" data-icon="mdi:account-group"></span>
+<div class="font-medium mt-1">邀请好友</div>
+<div class="text-xs text-green-500">+50分/人</div>
+</div>
+</div>
+</div>
+<!-- 兑换区域 -->
+<div class="mt-8">
+<h3 class="font-semibold text-lg mb-6">碳积分兑换中心</h3>
+<div class="grid grid-cols-4 gap-6">
+<div class="card text-center">
+<div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+<span class="iconify text-3xl text-orange-600" data-icon="mdi:coffee"></span>
+</div>
+<h4 class="font-medium mt-3">校园咖啡券</h4>
+<div class="text-sm text-gray-600">可兑换3次</div>
+<div class="bg-green-100 text-green-700 rounded-full px-3 py-1 mt-3 mb-2 text-sm">
+                250积分
+              </div>
+<button class="btn-primary mt-2 w-full">立即兑换</button>
+</div>
+<div class="card text-center">
+<div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+<span class="iconify text-3xl text-blue-600" data-icon="mdi:book-open-variant"></span>
+</div>
+<h4 class="font-medium mt-3">新书代金券</h4>
+<div class="text-sm text-gray-600">价值¥20</div>
+<div class="bg-green-100 text-green-700 rounded-full px-3 py-1 mt-3 mb-2 text-sm">
+                600积分
+              </div>
+<button class="btn-primary mt-2 w-full">立即兑换</button>
+</div>
+<div class="card text-center">
+<div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+<span class="iconify text-3xl text-purple-600" data-icon="mdi:paw"></span>
+</div>
+<h4 class="font-medium mt-3">环保帆布包</h4>
+<div class="text-sm text-gray-600">限量版设计</div>
+<div class="bg-green-100 text-green-700 rounded-full px-3 py-1 mt-3 mb-2 text-sm">
+                900积分
+              </div>
+<button class="btn-primary mt-2 w-full">立即兑换</button>
+</div>
+<div class="card text-center">
+<div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+<span class="iconify text-3xl text-amber-600" data-icon="mdi:airplane"></span>
+</div>
+<h4 class="font-medium mt-3">出行礼包</h4>
+<div class="text-sm text-gray-600">单车月卡/充电券</div>
+<div class="bg-green-100 text-green-700 rounded-full px-3 py-1 mt-3 mb-2 text-sm">
+                400积分
+              </div>
+<button class="btn-primary mt-2 w-full">立即兑换</button>
+</div>
+</div>
+</div>
+<!-- 成就勋章 -->
+<div class="mt-8">
+<h3 class="font-semibold text-lg mb-6">环保成就勋章</h3>
+<div class="grid grid-cols-6 gap-4">
+<div class="text-center">
+<div class="bg-amber-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto">
+<span class="iconify text-2xl text-amber-600" data-icon="mdi:star"></span>
+</div>
+<div class="text-xs mt-2">环保新人</div>
+</div>
+<div class="text-center">
+<div class="bg-slate-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto opacity-40">
+<span class="iconify text-2xl text-slate-600" data-icon="mdi:tree"></span>
+</div>
+<div class="text-xs mt-2 text-gray-500">减碳能手</div>
+</div>
+<div class="text-center">
+<div class="bg-slate-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto opacity-40">
+<span class="iconify text-2xl text-rose-600" data-icon="mdi:lightbulb-on"></span>
+</div>
+<div class="text-xs mt-2 text-gray-500">智慧用能</div>
+</div>
+<div class="text-center">
+<div class="bg-emerald-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto">
+<span class="iconify text-2xl text-emerald-600" data-icon="mdi:repeat-variant"></span>
+</div>
+<div class="text-xs mt-2">循环达人</div>
+</div>
+<div class="text-center">
+<div class="bg-slate-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto opacity-40">
+<span class="iconify text-2xl text-purple-600" data-icon="mdi:earth"></span>
+</div>
+<div class="text-xs mt-2 text-gray-500">绿色大使</div>
+</div>
+<div class="text-center">
+<div class="bg-blue-100 rounded-full w-14 h-14 flex items-center justify-center mx-auto">
+<span class="iconify text-2xl text-blue-600" data-icon="mdi:account-group"></span>
+</div>
+<div class="text-xs mt-2">社区模范</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部信息 -->
+<div class="bg-[#2C3E50] text-white py-8 mt-10">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex justify-between items-center">
+<div>
+<h3 class="font-bold text-xl mb-2">校园碳中和平台</h3>
+<p class="text-gray-300">让知识循环，为地球减负</p>
+</div>
+<div class="flex space-x-4">
+<div class="text-center">
+<div class="text-sm text-gray-300">今日减少碳排量</div>
+<div class="text-2xl font-bold text-green-400 mt-1">127kg</div>
+</div>
+<div class="text-center pl-4 border-l border-gray-600">
+<div class="text-sm text-gray-300">累计交易书籍</div>
+<div class="text-2xl font-bold text-blue-400 mt-1">8,562本</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+        © 2025 绿色校园计划 | 区块链技术支持 | AI优化算法 | 碳积分体系
+      </div>
+</div>
+</div>
+<!-- 本地JavaScript脚本 -->
+<script src="campus_carbon_script.js"></script>
+</body>
+</html>
